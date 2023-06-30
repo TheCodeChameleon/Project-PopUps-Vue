@@ -1,0 +1,21 @@
+{
+  "jogo": {
+    "titulo": "Pop-up do Jogo",
+    "subtitulo": "Jogue o emocionante caça-níquel!",
+    "imagem": "/img/niquel.gif",
+    "camposFormulario": 4,
+    "subtituloForm": "Insira seus dados e receba o cupom:",
+    "checkboxConsentimento": true,
+    "checkboxTexto": "Concordo com a coleta dos meus dados."
+  },
+  "video": {
+    "titulo": "Pop-up de Vídeo",
+    "subtitulo": "Assista ao nosso vídeo exclusivo!",
+    "urlVideo": "/video/video.mp4",
+    "camposFormulario": 4,
+    "checkboxConsentimento": true,
+    "checkboxTexto": "Concordo com a coleta dos meus dados.",
+    "subtituloForm": "Insira seus dados e receba o cupom:",
+    "poster": "./img/reuniao.webp"
+  }
+}
