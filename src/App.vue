@@ -13,6 +13,12 @@
         :propVideo="propVideo"
         @update:propVideo="propVideo = $event"
       />
+      <button @click="showPop">Pop-Up PopConvert (Bônus)</button>
+      <Pop
+        v-if="propPop"
+        :propPop="propPop"
+        @update:propPop="propPop = $event"
+      />
     </div>
     <div class="home-text">
       <Text />
@@ -35,6 +41,7 @@ import Video from "./components/Video.vue";
 import Game from "./components/Game.vue";
 import Text from "./components/Text.vue";
 import Links from "./components/Links.vue";
+import Pop from "./components/Pop.vue";
 
 export default {
   name: "App",
@@ -43,11 +50,13 @@ export default {
     Game,
     Text,
     Links,
+    Pop,
   },
   data() {
     return {
       propGame: false,
       propVideo: false,
+      propPop: false,
     };
   },
   methods: {
@@ -56,6 +65,9 @@ export default {
     },
     showVideo() {
       return (this.propVideo = !this.propVideo);
+    },
+    showPop() {
+      return (this.propPop = !this.propPop);
     },
   },
 };

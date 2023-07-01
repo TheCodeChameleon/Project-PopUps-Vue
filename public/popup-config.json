@@ -17,5 +17,14 @@
     "checkboxTexto": "Concordo com a coleta dos meus dados.",
     "subtituloForm": "Insira seus dados e receba o cupom:",
     "poster": "./img/reuniao.webp"
+  },
+  "pop": {
+    "titulo": "Potencialize seu Negócio com Leads de Qualidade!",
+    "subtitulo": "descubra como nossos Leads podem impulsionar suas Vendas e Lucros:",
+    "camposFormulario": 4,
+    "checkboxConsentimento": true,
+    "checkboxTexto": "Concordo com a coleta dos meus dados.",
+    "imagemFooter": "/img/logopop.webp",
+    "imagemRoda": "/img/roda.webp"
   }
 }
