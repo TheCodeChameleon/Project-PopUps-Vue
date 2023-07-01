@@ -160,7 +160,7 @@ export default {
   padding: 10px;
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 600px) {
   * {
     word-break: break-all;
   }

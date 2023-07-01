@@ -161,12 +161,11 @@ export default {
 }
 
 .pop-container-navbar {
-  width: 100%;
   font-size: 30px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 20px 20px 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
 }
 
 .pop-container-navbar i {
@@ -188,8 +187,8 @@ export default {
 .pop-container-title {
   text-align: center;
   flex-direction: column;
-  margin: 10px auto 10px;
-  padding: 0 10px;
+  margin: 0 auto 10px;
+  padding: 50px 10px 0;
 }
 
 .pop-container-title h1 {
@@ -206,7 +205,7 @@ export default {
 .pop-container-form {
   margin: 10px auto;
   width: 100%;
-  padding: 0 60px;
+  padding: 0 60px 60px;
   text-align: center;
 }
 
@@ -250,16 +249,13 @@ export default {
 }
 
 .pop-container-footer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-top: 10px;
-  padding: 0 10px 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 .pop-container-footer img {
-  max-width: 250px;
+  max-width: 220px;
 }
 
 @keyframes rotate {
@@ -287,7 +283,7 @@ export default {
     font-size: 17px;
   }
   .pop-container-form {
-    padding: 0 30px;
+    padding: 0 30px 50px;
   }
   .pop-container-form input[type="submit"] {
     font-size: 15px;
@@ -295,6 +291,31 @@ export default {
   @media only screen and (max-width: 510px) {
     .pop-container {
       width: 80%;
+    }
+  }
+  @media screen and (orientation: landscape) and (max-height: 640px) {
+    .pop-container {
+      width: 90%;
+      height: 100%;
+      overflow: auto;
+      flex-direction: row;
+    }
+
+    .pop-container {
+      flex-direction: row;
+    }
+
+    .pop-container-title {
+      padding: 0 20px;
+    }
+
+    .pop-container-form {
+      padding: 0;
+    }
+
+    .pop-container-navbar,
+    .pop-container-footer {
+      left: 10px !important;
     }
   }
 }

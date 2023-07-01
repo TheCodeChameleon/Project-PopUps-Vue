@@ -348,4 +348,27 @@ export default {
     width: 90%;
   }
 }
+
+@media screen and (orientation: landscape) and (max-height: 640px) {
+  .video-container {
+    width: 90%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .video-container-main {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .video-container-main-play {
+    padding: 0;
+  }
+  .video-container-main-form {
+    padding: 0 20px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
 </style>

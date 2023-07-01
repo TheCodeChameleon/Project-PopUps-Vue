@@ -329,4 +329,27 @@ export default {
     width: 90%;
   }
 }
+
+@media screen and (orientation: landscape) and (max-height: 420px) {
+  .game-container {
+    width: 90%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .game-container-main {
+    flex-direction: row;
+  }
+
+  .game-container-main-niquel {
+    height: 100%;
+    background-repeat: repeat;
+  }
+  .game-container-navbar i {
+    color: #171612;
+  }
+  .game-container-main-form {
+    padding: 30px 0 0;
+  }
+}
 </style>
