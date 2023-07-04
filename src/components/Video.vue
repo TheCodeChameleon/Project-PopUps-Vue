@@ -10,11 +10,7 @@
       </div>
       <div class="video-container-main">
         <div class="video-container-main-play">
-          <video
-            :src="popupConfig.video.urlVideo"
-            controls
-            :poster="popupConfig.video.poster"
-          ></video>
+          <video :src="popupConfig.video.urlVideo" controls></video>
         </div>
         <div class="video-container-main-bar"></div>
         <div class="video-container-main-form">
@@ -135,6 +131,11 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+  font-family: "Ancient";
+  src: url("../../public/fonts/Ancient Medium.ttf");
+}
+
 .video {
   width: 100%;
   height: 100vh;
@@ -150,11 +151,14 @@ export default {
 
 .video-container {
   width: 60%;
-  background: #034078;
-  color: #fefcfb;
+  color: #0b0500;
   position: relative;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 7px;
+  background: linear-gradient(#f7f3e6b0, #f7f3e6b0),
+    url(../../public/img/papel.avif);
+  background-size: cover;
+  background-position: center;
 }
 
 .video-container-navbar {
@@ -177,7 +181,6 @@ export default {
 
 .video-container-main-play {
   width: 50%;
-  background: #034078;
   background-size: cover;
   background-position: center;
   height: 50%;
@@ -193,10 +196,17 @@ export default {
 
 .video-container-text h1 {
   margin-bottom: 5px;
+  font-family: "Ancient", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
 }
 
 .video-container-text h3 {
   font-weight: 400;
+  background: #0b0500;
+  color: #f7f3e6;
+  padding: 15px 0;
+  font-style: italic;
 }
 
 .video-container-main-play {
@@ -216,7 +226,6 @@ export default {
 .video-container-main-form {
   display: flex;
   flex-direction: column;
-  background: #034078;
   width: 50%;
   height: 100%;
   text-align: center;
@@ -249,23 +258,23 @@ export default {
 }
 
 .video-container-main-form input[type="submit"] {
-  background: #171612;
-  color: #fffffc;
+  background: #0b0500;
+  color: #f7f3e6;
   border: 1px solid #00000000;
   font-weight: bold;
 }
 
 .video-container-main-form input[type="submit"]:hover {
   background: transparent;
-  border: 1px solid #fffffc;
-  color: #fffffc;
+  border: 1px solid #0b0500;
+  color: #0b0500;
   cursor: pointer;
 }
 
 .video-container-main-bar {
   width: 2px;
   height: 320px;
-  background: #fffffc;
+  background: #0b0500;
 }
 
 @keyframes rotation {
@@ -313,16 +322,12 @@ export default {
     max-width: 60%;
   }
 
-  .video-container-navbar i {
-    color: #fffffc;
-  }
-
   .video-container-main-form {
     padding: 10px 0;
   }
 
   .video-container-text h1 {
-    font-size: 25px;
+    font-size: 40px;
     border-left: 0;
     border-right: 0;
   }
@@ -339,7 +344,7 @@ export default {
 
 @media only screen and (max-width: 800px) {
   .video-container-main-play video {
-    max-width: 80%;
+    max-width: 85%;
   }
 }
 
