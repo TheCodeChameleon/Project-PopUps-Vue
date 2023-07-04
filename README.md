@@ -1,6 +1,6 @@
 # Project-PopUps-Vue
 
-Este projeto foi desenvolvido utilizando Vue.js e possui como objetivo a criação de dois tipos de pop-ups customizáveis: um para o jogo caça-níquel e outro para exibição de um vídeo. Os pop-ups podem ser configurados através de um arquivo JSON, permitindo a seleção do tipo de jogo, vídeo, número de campos no formulário, presença de checkbox para consentimento de dados, título e subtítulo.
+Este projeto foi desenvolvido utilizando Vue.js e possui como objetivo a criação de três tipos de pop-ups customizáveis: um para o jogo caça-níquel, outro para exibição de um vídeo e outro simulando um pop-up oficial da Popconvert. Os pop-ups podem ser configurados através de um arquivo JSON, permitindo a seleção do tipo de jogo, vídeo, número de campos no formulário, presença de checkbox para consentimento de dados, título e subtítulo.
 
 ## Configuração do Projeto
 
@@ -40,7 +40,6 @@ Para personalizar a configuração dos pop-ups, você pode editar o arquivo `pub
 - `subtitulo` (subtítulo do pop-up)
 - `subtituloForm` (subtítulo do formulário)
 - `checkboxTexto` (texto do checkbox)
-- `poster` (capa do vídeo)
 
 ## Observações
 
