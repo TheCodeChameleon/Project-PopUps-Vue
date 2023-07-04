@@ -297,7 +297,7 @@ export default {
     .pop-container {
       width: 90%;
       height: 100%;
-      overflow: auto;
+      overflow: hidden;
       flex-direction: row;
     }
 
@@ -310,7 +310,7 @@ export default {
     }
 
     .pop-container-form {
-      padding: 0;
+      padding: 0 10px;
     }
 
     .pop-container-navbar,
